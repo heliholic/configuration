@@ -2846,6 +2846,8 @@ MspHelper.prototype.sendRxFailConfig = function(onCompleteCallback)
 
 MspHelper.prototype.setArmingEnabled = function(doEnable, onCompleteCallback)
 {
+    doEnable = true;
+
     if (FC.CONFIG.armingDisabled === doEnable) {
 
         FC.CONFIG.armingDisabled = !doEnable;
